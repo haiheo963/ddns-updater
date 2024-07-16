@@ -12,22 +12,22 @@ import (
 	_ "time/tzdata"
 
 	_ "github.com/breml/rootcerts"
-	"github.com/qdm12/ddns-updater/internal/backup"
-	"github.com/qdm12/ddns-updater/internal/config"
-	"github.com/qdm12/ddns-updater/internal/data"
-	"github.com/qdm12/ddns-updater/internal/health"
-	"github.com/qdm12/ddns-updater/internal/healthchecksio"
-	"github.com/qdm12/ddns-updater/internal/models"
-	"github.com/qdm12/ddns-updater/internal/noop"
-	jsonparams "github.com/qdm12/ddns-updater/internal/params"
-	persistence "github.com/qdm12/ddns-updater/internal/persistence/json"
-	"github.com/qdm12/ddns-updater/internal/provider"
-	recordslib "github.com/qdm12/ddns-updater/internal/records"
-	"github.com/qdm12/ddns-updater/internal/resolver"
-	"github.com/qdm12/ddns-updater/internal/server"
-	"github.com/qdm12/ddns-updater/internal/shoutrrr"
-	"github.com/qdm12/ddns-updater/internal/update"
-	"github.com/qdm12/ddns-updater/pkg/publicip"
+	"github.com/haiheo963/ddns-updater/internal/backup"
+	"github.com/haiheo963/ddns-updater/internal/config"
+	"github.com/haiheo963/ddns-updater/internal/data"
+	"github.com/haiheo963/ddns-updater/internal/health"
+	"github.com/haiheo963/ddns-updater/internal/healthchecksio"
+	"github.com/haiheo963/ddns-updater/internal/models"
+	"github.com/haiheo963/ddns-updater/internal/noop"
+	jsonparams "github.com/haiheo963/ddns-updater/internal/params"
+	persistence "github.com/haiheo963/ddns-updater/internal/persistence/json"
+	"github.com/haiheo963/ddns-updater/internal/provider"
+	recordslib "github.com/haiheo963/ddns-updater/internal/records"
+	"github.com/haiheo963/ddns-updater/internal/resolver"
+	"github.com/haiheo963/ddns-updater/internal/server"
+	"github.com/haiheo963/ddns-updater/internal/shoutrrr"
+	"github.com/haiheo963/ddns-updater/internal/update"
+	"github.com/haiheo963/ddns-updater/pkg/publicip"
 	"github.com/qdm12/goservices"
 	"github.com/qdm12/gosettings/reader"
 	"github.com/qdm12/gosplash"
@@ -273,7 +273,7 @@ func printSplash(buildInfo models.BuildInformation) {
 		Version:      buildInfo.Version,
 		Commit:       buildInfo.Commit,
 		BuildDate:    buildInfo.Date,
-		Announcement: "Public IP dns provider GOOGLE, see https://github.com/qdm12/ddns-updater/issues/492",
+		Announcement: "Public IP dns provider GOOGLE, see https://github.com/haiheo963/ddns-updater/issues/492",
 		AnnounceExp:  announcementExp,
 		// Sponsor information
 		PaypalUser:    "qmcgaw",
