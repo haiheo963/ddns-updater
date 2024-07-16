@@ -1,4 +1,4 @@
-module github.com/qdm12/ddns-updater
+module github.com/haiheo963/ddns-updater
 
 go 1.22
 
