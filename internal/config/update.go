@@ -15,9 +15,9 @@ type Update struct {
 }
 
 func (u *Update) setDefaults() {
-	const defaultPeriod = 10 * time.Minute
+	const defaultPeriod = 2 * time.Minute
 	u.Period = gosettings.DefaultComparable(u.Period, defaultPeriod)
-	const defaultCooldown = 5 * time.Minute
+	const defaultCooldown = 1 * time.Minute
 	u.Cooldown = gosettings.DefaultComparable(u.Cooldown, defaultCooldown)
 }
 
